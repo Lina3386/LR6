@@ -25,3 +25,47 @@
     - Имя: "4416 Makarova P.D."
     - Почта: "pupulkabut56@gmail.com"
 
+
+### 2. Работа с репозиторием
+Снимки выполненных операций:
+
+#### Скриншот 1: Создание файла через интерфейс GitHub
+![screenshot1](screenshots/screenshot1.png)
+
+#### Скриншот 2: Команды Git в консоли
+![screenshot2](screenshots/screenshot2.png)
+
+#### Скриншот 3: История коммитов
+![screenshot3](screenshots/screenshot3.png)
+
+#### Скриншот 4: Слияние веток
+![screenshot4](screenshots/screenshot4.png)
+
+#### Скриншот 5: Откат коммита
+![screenshot2](screenshots/screenshot2.png)
+
+
+## Лог команд
+
+```
+git config --global user.name "4416 Makarova P.D."
+git config --global user.email
+git clone https://github.com/Lina3386/LR6
+git status
+git pull origin master
+git branch -a
+git log --oneline
+git log
+git log --all
+git show HEAD
+git show origin/branch1~
+git checkout -b new_branch
+git add notes.txt
+git commit -m "Добавлен текст в notes.txt"
+git checkout master
+git merge new_branch
+git branch -d new_branch
+git branch
+git reset --hard HEAD~1
+git checkout -b report
+```
