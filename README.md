@@ -30,7 +30,7 @@
 Снимки выполненных операций:
 
 #### Скриншот 1: Создание файла через интерфейс GitHub
-![screenshot1](screenshots/screenshot1.png)
+![screenshot1](screenshots/screenshot1.jpg)
 
 #### Скриншот 2: Команды Git в консоли
 ![screenshot2](screenshots/screenshot2.png)
@@ -38,11 +38,14 @@
 #### Скриншот 3: История коммитов
 ![screenshot3](screenshots/screenshot3.png)
 
-#### Скриншот 4: Слияние веток
+#### Скриншот 4: Последние изменения веток
 ![screenshot4](screenshots/screenshot4.png)
 
-#### Скриншот 5: Откат коммита
-![screenshot2](screenshots/screenshot2.png)
+#### Скриншот 5: Слияние веток
+![screenshot2](screenshots/screenshot5.png)
+
+#### Скриншот 6: Откат коммита
+![screenshot2](screenshots/screenshot6.png)
 
 
 ## Лог команд
@@ -68,4 +71,24 @@ git branch -d new_branch
 git branch
 git reset --hard HEAD~1
 git checkout -b report
+git log --pretty=format:"%h %ad %an %s" --date=short
 ```
+
+## История коммитов
+
+| Хэш | Дата | Автор | Комментарий |
+|-----|------|-------|-------------|
+| 1a886b6 | 2025-11-08 | 4416 Makarova P.D. | Добавлены скриншоты|
+| f10f0b9 | 2025-11-07 | 4416 Makarova P.D. | Выполненные операции и лог команд|
+| 9e956d3 | 2025-11-07 | 4416 Makarova P.D. | Начало оформления отчета: цель работы и задачи|
+| 888b56b | 2025-11-07 | 4416 Makarova P.D. | Изменения notes.txt|
+| a36e58d | 2025-11-07 | 4416 Makarova P.D. | Поставил стол в notes.txt|
+| 465ef95 | 2025-11-07 | 4416 Makarova P.D. | В гневе бросает стол в notes.txt|
+| 0582b27 | 2025-11-07 | 4416 Makarova P.D. | Утопающий в notes.txt|
+| 0857434 | 2025-11-07 | Макарова Полина | Create notes.txt|
+| 921f53b | 2020-11-21 | Kurtyanik | Обновление информации|
+| c08a654 | 2020-11-21 | Kurtyanik | Файл создан пустым|
+| 3c6e913 | 2020-11-21 | Kurtyanik | Initial commit|
+
+## Вывод
+В результате выполнения лабораторной работы были изучены базовые возможности системы управления версиями, опыт работы с Git Api, опыт работы с локальным и удаленным репозиторием. 
