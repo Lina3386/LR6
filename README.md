@@ -42,10 +42,17 @@
 ![screenshot4](screenshots/screenshot4.png)
 
 #### Скриншот 5: Слияние веток
-![screenshot2](screenshots/screenshot5.png)
+
+1. Новая ветка + master (без конфликта):
+![screenshot5](screenshots/screenshot5.png)
+
+2. Ветка branch1 + master (с конфликтом):
+![screenshot7](screenshots/screenshot7.png)
+
+Для решения конфликта 2 текста разных версий файла mergefile.txt были объединёны, дублирующиеся слова были удалены. 
 
 #### Скриншот 6: Откат коммита
-![screenshot2](screenshots/screenshot6.png)
+![screenshot6](screenshots/screenshot6.png)
 
 
 ## Лог команд
@@ -68,6 +75,7 @@ git commit -m "Добавлен текст в notes.txt"
 git checkout master
 git merge new_branch
 git branch -d new_branch
+$ git push origin --delete branch1
 git branch
 git reset --hard HEAD~1
 git checkout -b report
@@ -78,17 +86,18 @@ git log --pretty=format:"%h %ad %an %s" --date=short
 
 | Хэш | Дата | Автор | Комментарий |
 |-----|------|-------|-------------|
-| 1a886b6 | 2025-11-08 | 4416 Makarova P.D. | Добавлены скриншоты|
-| f10f0b9 | 2025-11-07 | 4416 Makarova P.D. | Выполненные операции и лог команд|
-| 9e956d3 | 2025-11-07 | 4416 Makarova P.D. | Начало оформления отчета: цель работы и задачи|
-| 888b56b | 2025-11-07 | 4416 Makarova P.D. | Изменения notes.txt|
-| a36e58d | 2025-11-07 | 4416 Makarova P.D. | Поставил стол в notes.txt|
-| 465ef95 | 2025-11-07 | 4416 Makarova P.D. | В гневе бросает стол в notes.txt|
+| 1a886b6 | 2025-11-08 | 4416 Makarova P.D. | Добавлены скриншоты |
+| f10f0b9 | 2025-11-07 | 4416 Makarova P.D. | Выполненные операции и лог команд |
+| 9e956d3 | 2025-11-07 | 4416 Makarova P.D. | Начало оформления отчета: цель работы и задачи |
+| 888b56b | 2025-11-07 | 4416 Makarova P.D. | Изменения notes.txt |
+| a36e58d | 2025-11-07 | 4416 Makarova P.D. | Поставил стол в notes.txt |
+| 465ef95 | 2025-11-07 | 4416 Makarova P.D. | В гневе бросает стол в notes.txt |
 | 0582b27 | 2025-11-07 | 4416 Makarova P.D. | Утопающий в notes.txt|
-| 0857434 | 2025-11-07 | Макарова Полина | Create notes.txt|
-| 921f53b | 2020-11-21 | Kurtyanik | Обновление информации|
-| c08a654 | 2020-11-21 | Kurtyanik | Файл создан пустым|
-| 3c6e913 | 2020-11-21 | Kurtyanik | Initial commit|
+| cca1ba3 | 2025-11-08 | 4416 Makarova P.D. | Конфликт разрешен |
+| 0857434 | 2025-11-07 | Макарова Полина | Create notes.txt |
+| 921f53b | 2020-11-21 | Kurtyanik | Обновление информации |
+| c08a654 | 2020-11-21 | Kurtyanik | Файл создан пустым |
+| 3c6e913 | 2020-11-21 | Kurtyanik | Initial commit |
 
 ## Вывод
 В результате выполнения лабораторной работы были изучены базовые возможности системы управления версиями, опыт работы с Git Api, опыт работы с локальным и удаленным репозиторием. 
